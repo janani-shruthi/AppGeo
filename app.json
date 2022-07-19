@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "appgeo",
-    "slug": "appgeo",
+    "name": "AppGeo",
+    "slug": "AppGeo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
