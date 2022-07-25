@@ -1,5 +1,5 @@
 /*Organization Name : Redleaf Technologies Private Limited
-Developer NAme : Janani Shruthi */
+Developer Name : Janani Shruthi */
 import React, { useState, useEffect, useRef } from "react";
 import bar from "./src/Texas.json"; //json file consisting of the area
 import MapView, { Callout, Geojson, Marker } from "react-native-maps";
@@ -186,10 +186,8 @@ const App = () => {
 
           <MapView.Callout > 
            <ScrollView showsVerticalScrollIndicator={true} >
-              <View><Text>GLOBALID :{markers.globalid}</Text></View>
               <View><Text>Condition :{markers.cond}</Text></View>
-              <View><Text>Description :{markers.desp}</Text></View>
-              <View><Text>Detour flag :{markers.detour}</Text></View>
+              <View><Text>County Num :{markers.connum}</Text></View>
               <View><Text>Route Name :{markers.rn}</Text></View>
               <View><Text>Travel Direction :{markers.td}</Text></View>
            </ScrollView>
@@ -214,10 +212,9 @@ const App = () => {
               longitude: data.coordinates.longitude,
               latitudeDelta: 0.009,
               longitudeDelta: 0.009,
-              globalid: data.feature.properties.GLOBALID,
               cond: data.feature.properties.condition,
-              detour: data.feature.properties.detour_flag,
-              desp:data.feature.properties.description.replace(regex,''),
+              connum:data.feature.properties.county_num,
+              rout: data.feature.properties.route_name,
               td: data.feature.properties.travel_direction,
        
             })
@@ -244,10 +241,9 @@ const App = () => {
               longitude: data.coordinates.longitude,
               latitudeDelta: 0.009,
               longitudeDelta: 0.009,
-              globalid: data.feature.properties.GLOBALID,
               cond: data.feature.properties.condition,
-              detour: data.feature.properties.detour_flag,
-              desp:data.feature.properties.description.replace(regex,''),
+              connum:data.feature.properties.county_num,
+              rout: data.feature.properties.route_name,
               td: data.feature.properties.travel_direction,
 
             })
@@ -273,10 +269,9 @@ const App = () => {
               longitude: data.coordinates.longitude,
               latitudeDelta: 0.009,
               longitudeDelta: 0.009,
-              globalid: data.feature.properties.GLOBALID,
               cond: data.feature.properties.condition,
-              detour: data.feature.properties.detour_flag,
-              desp:data.feature.properties.description.replace(regex,''),
+              connum:data.feature.properties.county_num,
+              rout: data.feature.properties.route_name,
               td: data.feature.properties.travel_direction,
 
             })
@@ -302,10 +297,9 @@ const App = () => {
               longitude: data.coordinates.longitude,
               latitudeDelta: 0.009,
               longitudeDelta: 0.009,
-              globalid: data.feature.properties.GLOBALID,
               cond: data.feature.properties.condition,
-              detour: data.feature.properties.detour_flag,
-              desp:data.feature.properties.description.replace(regex,''),
+              connum:data.feature.properties.county_num,
+              rout: data.feature.properties.route_name,
               td: data.feature.properties.travel_direction,
 
             })
